@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container">
+  
     <nav class="navbar" style="background-color: #d4d7da;">
       <!-- Navbar content -->
       <div class="d-flex w-100 justify-content-between">
@@ -79,19 +79,36 @@
           </div>
 
       </div>
-  </div>
+
+
+      
 
 
 
   </nav>
-  <div class="enlaces d-flex ps-4 justify-content-center">
-    <a class="fa-solid fa-table-cells " data-bs-toggle="tab-pane" data-bs-target="#home" href="#home"> </a>
-    <i> <a class="fa-solid fa-square d-flex ps-4 justify-content-center" title="Next Page" href="#post"></a> </i>
-  </div>
+  <div class="container">
 
-  <! Fotos>
+    
 
-    <div class="container mt-5 mw-10" id="post">
+
+
+
+   <!-- Fotos --> 
+
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home1">
+    
+    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="post1" data-bs-toggle="tab" data-bs-target="#post" type="button"
+              role="tab" aria-controls="post" aria-selected="true"><i
+                  class="fa-table-cells fa-solid"></i></a>
+      </li>
+      <li class="nav-item" role="presentation">
+          <a class="nav-link" id="home1" data-bs-toggle="tab" data-bs-target="#home" type="button"
+              role="tab" aria-controls="home" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+      </li>
+  </ul>
+
       <div class="post d-md-flex justify-content-md-center">
         <div class="card border-primary mb-3" style="max-width: 50rem;">
           <div class="card-header">
@@ -160,7 +177,7 @@
           <div class="card-header">Header</div>
           <img
             src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1643296941_2760497279972487653_198876414.jpg"
-            alt="" style="height: auto; weight: auto">
+            alt="" style="height: auto; width: auto">
           <div class="card-body text-primary">
             <h5 class="card-title">Primary card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -226,27 +243,20 @@
     </div>
 
 
-    </div>
-    <!-- Fontawesome link (For the icons) -->
-
-    </div>
-    </div>
-
-    </div>
-
-
-    <div class="container2 mt-5">
-      <p>
-      <div class="enlaces d-flex ps-4 justify-content-center fade show active">
-        <a class="fa-solid fa-table-cells " data-bs-toggle="tab-pane" data-bs-target="#home" href="#home"> </a>
-        <i> <a class="fa-solid fa-square d-flex ps-4 justify-content-center" title="Next Page" href="#post"></a> </i>
-      </div>
-
-      </p>
-      <div class="tab-content" id="myTabContent">
-        <!-- 3 photos per row grid -->
-        <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
-
+    <!-- Mosaico -->
+    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="post1" data-bs-toggle="tab" data-bs-target="#post" type="button"
+              role="tab" aria-controls="post" aria-selected="true"><i
+                  class="fa-table-cells fa-solid"></i></a>
+      </li>
+      <li class="nav-item" role="presentation">
+          <a class="nav-link" id="home1" data-bs-toggle="tab" data-bs-target="#home" type="button"
+              role="tab" aria-controls="home" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+      </li>
+  </ul>
+        <div class="tab-pane fade show active overflow-hidden" id="post" role="tabpanel" aria-labelledby="post1">
+          
           <div class="row">
             <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
                 src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1638705614_2721982440044397483_198876414.jpg" " class="
@@ -281,11 +291,11 @@
                 class="img-fluid w-100" alt=""></div>
           </div>
 
-
-        </div>
-      </DIv>
-
     </div>
+    
+  </div>
+
+
 
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Functionalities link  -->
