@@ -16,45 +16,40 @@
   
     <nav class="navbar" style="background-color: #d4d7da;">
       <!-- Navbar content -->
-      <div class="d-flex w-100 justify-content-between">
+      <div class="d-flex w-10 justify-content-between">
         <div>
           <i class="fa-brands fa-instagram fa-xl"></i>
           <h5 class="d-inline-block fs-5">Instagram</h5>
         </div>
+     
+      </nav>   
+        <div class="d-flex flex-column justify-content-center">
 
-
-        <div class="d-flex align-right justify-content-end">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Create a new post
-          </button>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-gear"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accesibility</a></li>
-              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-            </ul>
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+              href="#list-home" role="tab" aria-controls="list-home">
+              <i class="fa-table-cells fa-solid"></i>
+            </a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+              href="#list-profile" role="tab" aria-controls="list-profile">
+              <i class="fa-solid fa-square "></i>
+            </a>
           </div>
-        </div>
+    </div>
+    </div>
 
+    <!Ventana emergente>
 
-        <!Ventana emergente>
-
-          <!-- Modal Body -->
+          
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="d-flex align-right justify-content-end">
+
+
+            
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                  <h6 class="modal-title" id="exampleModalLabel">Create a new post</h6>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -75,226 +70,229 @@
                   <button type="button" class="btn btn-success">Publish</button>
                 </div>
               </div>
+           
+          </div>
+         </div>
+         <div class="d-flex align-right justify-content-end">
+
+            <!-- Menú despleqable -->
+            <button type="button" class="btn btn-success me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
             </div>
           </div>
+          
+          <div class="tab-content " id="nav-tabContent">
+    
+            <div class="tab-pane fade show active justify-content-center" " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+    
+              <div class="row">
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1638705614_2721982440044397483_198876414.jpg" " class="
+                    img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://pamipe.com/wp-content/uploads/2022/10/Perro-de-agua-espan%CC%83ol-2.jpg"
+                    class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1491515525_1487262483110757851_198876414.jpg"
+                    class="img-fluid w-100" alt=""></div>
+              </div>
+              <div class="row">
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://www.smartdog.es/img/cms/BLOG/PERRO%20AGUA/PERRO%20DE%20AGUA%20RASTA.jpg" " class="
+                    img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1643296941_2760497279972487653_198876414.jpg"
+                    class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1470387505_1310027805354069464_198876414.jpg"
+                    class="img-fluid w-100" alt=""></div>
+              </div>
+              <div class="row">
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://waterdogspain.com/wp-content/uploads/2018/05/homerok.jpg" " class=" img-fluid w-100"
+                    alt="">
+                </div>
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1576101428_2196820467154378164_198876414.jpg"
+                    class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
+                    src="https://waterdogspain.com/wp-content/uploads/2024/07/spanish_water_dog_1638196491_2717711608778330116_198876414.jpg"
+                    class="img-fluid w-100" alt=""></div>
+              </div>
+            </div>
+    
+    
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">
+                    <h2>My Crazy dog Spark!</h2>
+                    <div class=" contador d-flex justify-content-end">08/26</div>
+                  </div>
+                  <img
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1638705614_2721982440044397483_198876414.jpg"
+                    alt="">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">204 Likes</h5>
+                    <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">
+                    <h2>Turko</h2>
+                    <div class=" contador d-flex justify-content-end">
+                      <h2>08/26</h2>
+                    </div>
+                  </div>
+                  <img src="https://pamipe.com/wp-content/uploads/2022/10/Perro-de-agua-espan%CC%83ol-2.jpg" alt="">
+                  <div class="card-body text-primary ms-4 mx-2">
+                    <h5 class="card-title">26985 Likes</h5>
+                    <p class="card-text">This is an example of a very good photo that you can post on instagram.
+                      content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">
+                    <h2>Simba</h2>
+                    <div class=" contador d-flex justify-content-end"><small>06/100</small></div>
+                  </div>
+    
+                  <img
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1491515525_1487262483110757851_198876414.jpg"
+                    alt="">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">Header</div>
+                  <img src="https://www.smartdog.es/img/cms/BLOG/PERRO%20AGUA/PERRO%20DE%20AGUA%20RASTA.jpg" alt="">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">Header</div>
+                  <img
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1643296941_2760497279972487653_198876414.jpg"
+                    alt="" style="height: auto; width: auto">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">Header</div>
+                  <img
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1470387505_1310027805354069464_198876414.jpg"
+                    alt="">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">Header</div>
+                  <img src="https://waterdogspain.com/wp-content/uploads/2018/05/homerok.jpg" alt="">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">Header</div>
+                  <img
+                    src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1576101428_2196820467154378164_198876414.jpg"
+                    alt="">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="post d-md-flex justify-content-md-center">
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                  <div class="card-header">Header</div>
+                  <img
+                    src="https://waterdogspain.com/wp-content/uploads/2024/07/spanish_water_dog_1638196491_2717711608778330116_198876414.jpg"
+                    alt="">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
 
-      </div>
+      
+
+
+        
+
+      
 
 
       
 
 
 
-  </nav>
-  <div class="container">
-
-    
-
-
-
-
-   <!-- Fotos --> 
-
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home1">
-    
-    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="post1" data-bs-toggle="tab" data-bs-target="#post" type="button"
-              role="tab" aria-controls="post" aria-selected="true"><i
-                  class="fa-table-cells fa-solid"></i></a>
-      </li>
-      <li class="nav-item" role="presentation">
-          <a class="nav-link" id="home1" data-bs-toggle="tab" data-bs-target="#home" type="button"
-              role="tab" aria-controls="home" aria-selected="false"><i class="fa-solid fa-square"></i></a>
-      </li>
-  </ul>
-
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">
-            <h2>My Crazy dog Spark!</h2>
-            <div class=" contador d-flex justify-content-end">08/26</div>
-          </div>
-          <img
-            src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1638705614_2721982440044397483_198876414.jpg"
-            alt="">
-          <div class="card-body text-primary">
-            <h5 class="card-title">204 Likes</h5>
-            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">
-            <h2>Turko</h2>
-            <div class=" contador d-flex justify-content-end">
-              <h2>08/26</h2>
-            </div>
-          </div>
-          <img src="https://pamipe.com/wp-content/uploads/2022/10/Perro-de-agua-espan%CC%83ol-2.jpg" alt="">
-          <div class="card-body text-primary ms-4 mx-2">
-            <h5 class="card-title">26985 Likes</h5>
-            <p class="card-text">This is an example of a very good photo that you can post on instagram.
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">
-            <h2>Simba</h2>
-            <div class=" contador d-flex justify-content-end"><small>06/100</small></div>
-          </div>
-
-          <img
-            src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1491515525_1487262483110757851_198876414.jpg"
-            alt="">
-          <div class="card-body text-primary">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">Header</div>
-          <img src="https://www.smartdog.es/img/cms/BLOG/PERRO%20AGUA/PERRO%20DE%20AGUA%20RASTA.jpg" alt="">
-          <div class="card-body text-primary">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">Header</div>
-          <img
-            src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1643296941_2760497279972487653_198876414.jpg"
-            alt="" style="height: auto; width: auto">
-          <div class="card-body text-primary">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">Header</div>
-          <img
-            src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1470387505_1310027805354069464_198876414.jpg"
-            alt="">
-          <div class="card-body text-primary">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">Header</div>
-          <img src="https://waterdogspain.com/wp-content/uploads/2018/05/homerok.jpg" alt="">
-          <div class="card-body text-primary">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">Header</div>
-          <img
-            src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1576101428_2196820467154378164_198876414.jpg"
-            alt="">
-          <div class="card-body text-primary">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="post d-md-flex justify-content-md-center">
-        <div class="card border-primary mb-3" style="max-width: 50rem;">
-          <div class="card-header">Header</div>
-          <img
-            src="https://waterdogspain.com/wp-content/uploads/2024/07/spanish_water_dog_1638196491_2717711608778330116_198876414.jpg"
-            alt="">
-          <div class="card-body text-primary">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- Mosaico -->
-    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="post1" data-bs-toggle="tab" data-bs-target="#post" type="button"
-              role="tab" aria-controls="post" aria-selected="true"><i
-                  class="fa-table-cells fa-solid"></i></a>
-      </li>
-      <li class="nav-item" role="presentation">
-          <a class="nav-link" id="home1" data-bs-toggle="tab" data-bs-target="#home" type="button"
-              role="tab" aria-controls="home" aria-selected="false"><i class="fa-solid fa-square"></i></a>
-      </li>
-  </ul>
-        <div class="tab-pane fade show active overflow-hidden" id="post" role="tabpanel" aria-labelledby="post1">
-          
-          <div class="row">
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1638705614_2721982440044397483_198876414.jpg" " class="
-                img-fluid w-100" alt=""></div>
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://pamipe.com/wp-content/uploads/2022/10/Perro-de-agua-espan%CC%83ol-2.jpg"
-                class="img-fluid w-100" alt=""></div>
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1491515525_1487262483110757851_198876414.jpg"
-                class="img-fluid w-100" alt=""></div>
-          </div>
-          <div class="row">
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://www.smartdog.es/img/cms/BLOG/PERRO%20AGUA/PERRO%20DE%20AGUA%20RASTA.jpg" " class="
-                img-fluid w-100" alt=""></div>
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1643296941_2760497279972487653_198876414.jpg"
-                class="img-fluid w-100" alt=""></div>
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1470387505_1310027805354069464_198876414.jpg"
-                class="img-fluid w-100" alt=""></div>
-          </div>
-          <div class="row">
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://waterdogspain.com/wp-content/uploads/2018/05/homerok.jpg" " class=" img-fluid w-100"
-                alt=""></div>
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://waterdogspain.com/wp-content/uploads/2023/11/spanish_water_dog_1576101428_2196820467154378164_198876414.jpg"
-                class="img-fluid w-100" alt=""></div>
-            <div class="col-4 p-1"><img style="height: 23vw; object-fit: cover;"
-                src="https://waterdogspain.com/wp-content/uploads/2024/07/spanish_water_dog_1638196491_2717711608778330116_198876414.jpg"
-                class="img-fluid w-100" alt=""></div>
-          </div>
-
-    </div>
-    
-  </div>
-
+  
 
 
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
